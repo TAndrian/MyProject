@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	background: #232427;
+	background-image: url("https://i.redd.it/xrf4untzy9l61.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+}
+
+label.logo {
+	color: #fff;
+	font-size: 2.5em;
+	padding: 0 80px;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+nav ul {
+	margin-right: 20px;
+	width: auto;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+	background-color: #1b9bff;
+	transition: 0.5s;
+	padding: 17px;
+	border-radius: 15px;
+}
+
+#checkbtn {
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+/*modify : */
+@media (max-width: 920px) {
+	/*the size and the spacing of the logo when the screen is reduced by 920px*/
+	label.logo {
+		font-size: 30px;
+		padding-left: 30px;
+	}
+
+	nav ul li a {
+		/*the police of the element of the navbar when the screen is reduced by 920px*/
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px) {
+	/*display the fa-bars */
+	#checkbtn {
+		display: block;
+	}
+
+	nav {
+		display: block;
+	}
+
+	/*modify the position and the display to fixed and centered of the navbar elements*/
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+	nav ul {
+		width: 100%;
+		height: 80px;
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	/*Display the element of the navbar inlined when the fa-bars is checked*/
+	nav ul li {
+		display: inline;
+		margin-bottom: 30px;
+	}
+
+	a:hover,
+	a.active {
+		background-color: none;
+		transition: 0.5s;
+		padding: 17px;
+		border-radius: 15px;
+	}
+
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+/*--------form-contents------------------*/
+
+
+.contact-me
+{
+	justify-content: center;
+	padding: 40px 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	width: 40%;
+	height: auto;
+}
+
+.contact-me h2
+{
+	font-size: 2.5em;
+	text-align: center;	
+	color: rgb(56, 54, 54);
+}
+
+
+.border
+{
+	
+	width: 100px;
+	height: 10px;
+	background-color: #4867b1;
+	margin: 40px auto;
+}
+
+.form-content
+{
+	padding: 0 10px;
+	overflow: hidden;
+	max-width: 600px;
+	margin: auto;
+}
+
+.contact-form-text
+{
+	display: block;
+	margin: 20px 20px 40px 20px;
+	width: 80%;
+	box-sizing: border-box;
+	border: 0;
+	padding: 20px 20px;
+	color: rgb(7, 4, 4);
+	outline: none;
+	transition: 0.5s;
+
+}
+.contact-form-text:hover{
+	box-shadow: 0 0 10px 4px rgb(81, 80, 175);
+}
+
+textarea .contact-form-text:focus{
+	resize: none;
+	height: 120px;
+}
+
+.send-button
+{
+	font-size: large;
+	float: right;
+	display: flex;
+	border: 0;
+	padding: 12px 50px;
+	background-color: rgb(45, 11, 199);
+	color: #fff;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.send-button:hover
+{
+	box-shadow: 0 0 10px 4px rgb(251, 250, 253);
+	background: #2980b9;
+}
+
+

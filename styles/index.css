@@ -7,6 +7,7 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+
 }
 
 body {
@@ -16,7 +17,12 @@ body {
 	flex-wrap: wrap;
 	min-height: 100vh;
 	background: #232427;
+	background-image: url("https://i.redd.it/xrf4untzy9l61.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
+
 
 /*-----------------------NAVBAR-----------------------*/
 
@@ -24,7 +30,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(0, 67, 252, 0.89);
+	background-color: rgba(255, 255, 255, 0.5);
 	height: 80px;
 	width: 100%;
 	position: fixed;
@@ -36,7 +42,7 @@ nav {
 label.logo {
 	color: #fff;
 	font-size: 2.5em;
-	padding: 0 100px;
+	padding: 0 80px;
 	font-weight: bold;
 	line-height: 80px;
 }
@@ -139,9 +145,52 @@ a:hover {
 	}
 }
 
+/*-------------------INtro----------------------------*/
+.container-intro
+{
+	
+	height: 80px;
+	width: 50%;
+	max-width: 50%;
+	margin-top: 200px;
+	position: relative;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 2),
+		inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 3),
+		-5px -5px 15px rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+}
+
+.container-intro .intro
+{
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-width: 30px;
+	height: 60px;
+	background-color: #2a2b2f;
+	top: 10px;
+	left: 3px;
+	right: 3px;
+	bottom: 10px;
+	border-radius: 10px;
+	
+}
+.container-intro .intro p
+{
+	
+	margin-top: 2px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+	z-index: 1;
+	transition: 0.5s;
+}
+
 /*-----------------------CARDS--------------------------*/
 
-.container {
+.container {	display: flex;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -250,3 +299,5 @@ a:hover {
 .container .card:nth-child(3) .box .content a {
 	background-color: rgb(151, 142, 10);
 }
+
+
